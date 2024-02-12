@@ -1,0 +1,155 @@
+@media (max-width: 600px) {
+    body{
+        overflow-x: hidden; 
+    }
+    ::-webkit-scrollbar{
+        background-color: #F86CAF;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: #8A67F1;
+    }
+    #for_back_image{
+        height: 100%;
+        width: 100%;
+        background-image: url(media_600px_back.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #Home{
+        display: none;
+    }
+    #Library{
+        display: none;
+    }
+    #Liked{
+        display: none;
+    }
+    #search{
+        min-width: 120px ;
+        height: 5vh;
+        font-size: 25px;
+        background-color: transparent;
+        overflow:hidden
+    }
+    #search:focus{
+        border-radius: 15px;
+    }
+    #search:hover{
+        color: #F86CAF;
+        border: 2px solid #8A67F1;
+    }
+    #menu_icon{
+        display: inline;
+        color: #8A67F1;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    #menu_icon:hover{
+        color: #F86CAF;
+    } 
+    #roundimage1{
+        height: 80px;
+        width: 80px;
+        background-image: url(roundimage.PNG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        animation: rotate 0.9s linear infinite;
+    }
+    #roundimage2{
+        height: 80px;
+        width: 80px;
+        background-image: url(roundimage.PNG) ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        animation: rotate 0.9s linear infinite;
+    }
+    /* to rotate sound images*/
+    @keyframes rotate {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(720deg);
+        }
+    }
+    #content1{
+        display: inline;
+        height: 100%;
+        width: 70vw;
+        font-size: 20px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 30vh 0 0 3vw;
+        line-height: 1.5;
+        font-weight: 400;
+        font-stretch:ultra-expanded;
+    }
+    #content1 #logo_name{
+        color: #8A67F1;
+        font-size: 35px;
+        font-weight: bold;        
+    }
+    #content1 #logo_name a{
+        text-decoration: none;
+        color: #8A67F1;
+        transition-duration: 3s;
+        font-stretch:expanded;
+
+    }
+    #content1 #logo_name a:hover{
+        color: #F86CAF;
+        transition-duration: 3s;
+    }
+    #content1 p{
+        font-size: 0.7em;
+        line-height: 1.7;
+        font-stretch:expanded;
+    }
+    #content2{
+        display: none;
+    }
+    @keyframes animation_left {
+        from{
+            transform: translateX(-100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+        
+    }
+
+    #for_music{
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #music1{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+    #music1 img{
+        height: 5vh;
+    }
+    #music2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+    #music2 img{
+        height: 5vh;
+    }
+}
